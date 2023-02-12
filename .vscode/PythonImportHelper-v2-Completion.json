@@ -1,0 +1,119 @@
+[
+    {
+        "label": "Texnika",
+        "kind": 6,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "class Texnika: \n    def __init__(self, brand):\n        self.brand = brand\nclass Notebooks(Texnika):\n    def __init__(self,brand,video_card):\n        super().__init__(brand)\n        self.video_card = video_card\n    def more_info(self):\n        print(self.brand)\nnote = Notebooks('Samsung', 'nvdia')",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "Notebooks",
+        "kind": 6,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "class Notebooks(Texnika):\n    def __init__(self,brand,video_card):\n        super().__init__(brand)\n        self.video_card = video_card\n    def more_info(self):\n        print(self.brand)\nnote = Notebooks('Samsung', 'nvdia')\nnote.more_info()",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "note",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "note = Notebooks('Samsung', 'nvdia')\nnote.more_info()",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "Texnika",
+        "kind": 6,
+        "importPath": "texnika",
+        "description": "texnika",
+        "peekOfCode": "class Texnika:\n    def __init__(self, brand, model, typer):\n        self.brand = brand\n        self.model = model\n        self.typer = typer\n    def info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer}\" )\nclass Notebooks(Texnika):\n    def __init__(self,brand,model,typer, video_card, ram, display):\n        super().__init__(brand, model,typer)",
+        "detail": "texnika",
+        "documentation": {}
+    },
+    {
+        "label": "Notebooks",
+        "kind": 6,
+        "importPath": "texnika",
+        "description": "texnika",
+        "peekOfCode": "class Notebooks(Texnika):\n    def __init__(self,brand,model,typer, video_card, ram, display):\n        super().__init__(brand, model,typer)\n        self.video_card = video_card\n        self.ram = ram\n        self.display = display\n    def more_info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer}:: Video Crad: {self.video_card}, Ram: {self.ram}, Display: {self.display} \" )\nclass Televisions(Texnika):\n    def __init__(self,brand,model,typer,size, display):",
+        "detail": "texnika",
+        "documentation": {}
+    },
+    {
+        "label": "Televisions",
+        "kind": 6,
+        "importPath": "texnika",
+        "description": "texnika",
+        "peekOfCode": "class Televisions(Texnika):\n    def __init__(self,brand,model,typer,size, display):\n        super().__init__(brand, model,typer)\n        self.size = size\n        self.display = display\n    def more_info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer} ::  Size: {self.size}, Display: {self.display} \" )\nclass Smartphones(Texnika):\n    def __init__(self,brand,model,typer,size, sim_count):\n        super().__init__(brand, model,typer)",
+        "detail": "texnika",
+        "documentation": {}
+    },
+    {
+        "label": "Smartphones",
+        "kind": 6,
+        "importPath": "texnika",
+        "description": "texnika",
+        "peekOfCode": "class Smartphones(Texnika):\n    def __init__(self,brand,model,typer,size, sim_count):\n        super().__init__(brand, model,typer)\n        self.size = size\n        self.sim_count = sim_count\n    def more_info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer} ::  Size: {self.size}, Sim Count: {self.sim_count} \" )\n# tex = Texnika(brand=\"Telephone\", model=\"A6\", typer=\"Samsung\")\n# tex.info()\n# note = Notebooks(\"Samsung\", \"A6\",\"Telephone\",\"nvdia\",16,\"iris\")",
+        "detail": "texnika",
+        "documentation": {}
+    },
+    {
+        "label": "tel",
+        "kind": 5,
+        "importPath": "texnika",
+        "description": "texnika",
+        "peekOfCode": "tel = Smartphones(\"Apple\", \"Iphone 14\", \"Phone\",32,2)\ntel.more_info()",
+        "detail": "texnika",
+        "documentation": {}
+    },
+    {
+        "label": "Transport",
+        "kind": 6,
+        "importPath": "transport",
+        "description": "transport",
+        "peekOfCode": "class Transport:\n    def __init__(self, brand, model, typer):\n        self.brand = brand\n        self.model = model\n        self.typer = typer\n    def info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer}\" )\nclass ElectroCars(Transport):\n    def __init__(self,brand,model,typer, battery_life, chargin_time):\n        super().__init__(brand, model,typer)",
+        "detail": "transport",
+        "documentation": {}
+    },
+    {
+        "label": "ElectroCars",
+        "kind": 6,
+        "importPath": "transport",
+        "description": "transport",
+        "peekOfCode": "class ElectroCars(Transport):\n    def __init__(self,brand,model,typer, battery_life, chargin_time):\n        super().__init__(brand, model,typer)\n        self.battery_life = battery_life\n        self.chargin_time = chargin_time\n    def more_info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer}:: Battery Life: {self.battery_life}, Chargin Time: {self.chargin_time}\" )\nclass SportCars(Transport):\n    def __init__(self,brand,model,typer,motor, color):\n        super().__init__(brand, model,typer)",
+        "detail": "transport",
+        "documentation": {}
+    },
+    {
+        "label": "SportCars",
+        "kind": 6,
+        "importPath": "transport",
+        "description": "transport",
+        "peekOfCode": "class SportCars(Transport):\n    def __init__(self,brand,model,typer,motor, color):\n        super().__init__(brand, model,typer)\n        self.motor = motor\n        self.color = color\n    def more_info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer} ::  Motor: {self.motor}, Color: {self.color} \" )\nclass Truck(Transport):\n    def __init__(self,brand,model,typer,motor, height, longer, wieght):\n        super().__init__(brand, model,typer)",
+        "detail": "transport",
+        "documentation": {}
+    },
+    {
+        "label": "Truck",
+        "kind": 6,
+        "importPath": "transport",
+        "description": "transport",
+        "peekOfCode": "class Truck(Transport):\n    def __init__(self,brand,model,typer,motor, height, longer, wieght):\n        super().__init__(brand, model,typer)\n        self.motor = motor\n        self.height = height\n        self.longer = longer\n        self.wieght = wieght\n    def more_info(self):\n        print(f\"Brand: {self.brand} Model: {self.model} Type: {self.typer} ::  Height: {self.height}, Long: {self.longer}, Weight: {self.wieght} \" )\n# tran = Transport(brand=\"Shevrolet\", model=\"Nexia\", typer=\"Transport\")",
+        "detail": "transport",
+        "documentation": {}
+    },
+    {
+        "label": "truck",
+        "kind": 5,
+        "importPath": "transport",
+        "description": "transport",
+        "peekOfCode": "truck = Truck(brand=\"Shevrolet\", model=\"Nexia\", typer=\"Transport\",motor=\"XRT-35\",height=172,longer=150,wieght=172)\ntruck.more_info()",
+        "detail": "transport",
+        "documentation": {}
+    }
+]
