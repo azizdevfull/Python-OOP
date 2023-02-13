@@ -148,16 +148,52 @@
         "kind": 6,
         "importPath": "university",
         "description": "university",
-        "peekOfCode": "class Teacher(Staff):\n    def __init__(self,university,first_name, last_name, age,position, subject):\n        super().__init__(university,first_name, last_name, age)\n        self.position = position\n        self.subject = subject\n    def more_info(self):\n        print(f\"University: {self.university} Staff Name: {self.first_name} Last Name: {self.last_name} Position: {self.position} Subject: {self.subject}\")\n# uni = University(\"Tatu\")\n# uni.info()\n# staff = Staff(\"Tatu\",\"Omon\", \"Omonov\", 22)",
+        "peekOfCode": "class Teacher(Staff):\n    def __init__(self,university,first_name, last_name, age,position, subject):\n        super().__init__(university,first_name, last_name, age)\n        self.position = position\n        self.subject = subject\n    def more_info(self):\n        print(f\"University: {self.university} Staff Name: {self.first_name} Last Name: {self.last_name} Position: {self.position} Subject: {self.subject}\")\nclass OtherStaff(Staff):\n    def __init__(self,university,first_name, last_name, age,position):\n        super().__init__(university,first_name, last_name, age)",
         "detail": "university",
         "documentation": {}
     },
     {
-        "label": "stud",
+        "label": "OtherStaff",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class OtherStaff(Staff):\n    def __init__(self,university,first_name, last_name, age,position):\n        super().__init__(university,first_name, last_name, age)\n        self.position = position\n    def more_info(self):\n        print(f\"University: {self.university} Staff Name: {self.first_name} Last Name: {self.last_name} Position: {self.position}\")\nclass Object(University):\n    def __init__(self, university,name):\n        super().__init__(university)\n        self.name = name",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "Object",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class Object(University):\n    def __init__(self, university,name):\n        super().__init__(university)\n        self.name = name\n    def more_info(self):\n        print(f\"University: {self.university} Name: {self.name} \")\nclass Computer(Object):\n    def __init__(self,university,name,soni, tizimi, holati):\n        super().__init__(university,name)\n        self.soni = soni",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "Computer",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class Computer(Object):\n    def __init__(self,university,name,soni, tizimi, holati):\n        super().__init__(university,name)\n        self.soni = soni\n        self.tizimi = tizimi\n        self.holati = holati\n    def more_info(self):\n        print(f\"University: {self.university} Name: {self.name} Soni: {self.soni} Tizimi: {self.tizimi} Holati: {self.holati}\")\nclass Mebel(Object):\n    def __init__(self,university,name,soni, turi, holati):",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "Mebel",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class Mebel(Object):\n    def __init__(self,university,name,soni, turi, holati):\n        super().__init__(university,name)\n        self.soni = soni\n        self.turi = turi\n        self.holati = holati\n    def more_info(self):\n        print(f\"University: {self.university} Name: {self.name} Soni: {self.soni} Turi: {self.turi} Holati: {self.holati}\")\n# uni = University(\"Tatu\")\n# uni.info()",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "meb",
         "kind": 5,
         "importPath": "university",
         "description": "university",
-        "peekOfCode": "stud = Teacher(\"Tatu\",\"Omon\", \"Omonov\", 22, \"Star\", \"Sub\")\nstud.more_info()",
+        "peekOfCode": "meb = Mebel(\"Tatu\",\"Omon\", 250, \"Krovat\", \"Yaxshi\")\nmeb.more_info()",
         "detail": "university",
         "documentation": {}
     }
