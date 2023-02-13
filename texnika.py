@@ -43,5 +43,6 @@ class Smartphones(Texnika):
 # tel = Televisions("Samsung", "M3","Polski", 16,"Full")
 # tel.more_info()
 
+
 tel = Smartphones("Apple", "Iphone 14", "Phone",32,2)
 tel.more_info()

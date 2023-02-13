@@ -115,5 +115,50 @@
         "peekOfCode": "truck = Truck(brand=\"Shevrolet\", model=\"Nexia\", typer=\"Transport\",motor=\"XRT-35\",height=172,longer=150,wieght=172)\ntruck.more_info()",
         "detail": "transport",
         "documentation": {}
+    },
+    {
+        "label": "University",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class University:\n    def __init__(self, university):\n        self.university = university\n    def info(self):\n        print(f\"University: {self.university}\")\nclass Staff(University):\n    def __init__(self, university,first_name, last_name, age):\n        super().__init__(university)\n        self.first_name = first_name\n        self.last_name = last_name",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "Staff",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class Staff(University):\n    def __init__(self, university,first_name, last_name, age):\n        super().__init__(university)\n        self.first_name = first_name\n        self.last_name = last_name\n        self.age = age\n    def more_info(self):\n        print(f\"University: {self.university} Staff Name: {self.first_name} Last Name: {self.last_name} Age: {self.age}\")\nclass Student(Staff):\n    def __init__(self,university,first_name, last_name, age,group):",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class Student(Staff):\n    def __init__(self,university,first_name, last_name, age,group):\n        super().__init__(university,first_name, last_name, age)\n        self.group = group\n    def more_info(self):\n        print(f\"University: {self.university} Staff Name: {self.first_name} Last Name: {self.last_name} Age: {self.age} Groups: {self.group}\")\nclass Teacher(Staff):\n    def __init__(self,university,first_name, last_name, age,position, subject):\n        super().__init__(university,first_name, last_name, age)\n        self.position = position",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "Teacher",
+        "kind": 6,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "class Teacher(Staff):\n    def __init__(self,university,first_name, last_name, age,position, subject):\n        super().__init__(university,first_name, last_name, age)\n        self.position = position\n        self.subject = subject\n    def more_info(self):\n        print(f\"University: {self.university} Staff Name: {self.first_name} Last Name: {self.last_name} Position: {self.position} Subject: {self.subject}\")\n# uni = University(\"Tatu\")\n# uni.info()\n# staff = Staff(\"Tatu\",\"Omon\", \"Omonov\", 22)",
+        "detail": "university",
+        "documentation": {}
+    },
+    {
+        "label": "stud",
+        "kind": 5,
+        "importPath": "university",
+        "description": "university",
+        "peekOfCode": "stud = Teacher(\"Tatu\",\"Omon\", \"Omonov\", 22, \"Star\", \"Sub\")\nstud.more_info()",
+        "detail": "university",
+        "documentation": {}
     }
 ]
